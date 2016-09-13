@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dum-Y9-3qn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BG5-We-sBC">
+            <objects>
+                <navigationController id="Dum-Y9-3qn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DlI-B0-AZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l5T-cT-6BO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ph2-RC-Cl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1609" y="25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftStudy_02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOv-Ah-zfj">
+                                <color key="backgroundColor" red="0.59768258399999996" green="1" blue="0.1901501296" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="uk.png"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkt-SI-39j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSa-Ws-lbe">
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.67450980390000004" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="uk.png"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LHB-6T-PYs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-Ps-lS3">
+                                <color key="backgroundColor" red="0.55217355560000003" green="0.66089230369999996" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="uk.png"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJw-xR-dE2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kSa-Ws-lbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="1RH-CY-Rvs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GPj-Ps-lS3" secondAttribute="trailing" constant="70" id="CmG-Dv-BdZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kSa-Ws-lbe" secondAttribute="trailing" constant="70" id="EWZ-1f-5fT"/>
+                            <constraint firstItem="GPj-Ps-lS3" firstAttribute="width" secondItem="kSa-Ws-lbe" secondAttribute="width" id="Fuk-CF-o2X"/>
+                            <constraint firstItem="GPj-Ps-lS3" firstAttribute="top" secondItem="kSa-Ws-lbe" secondAttribute="bottom" constant="30" id="Gd2-4M-tse"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tOv-Ah-zfj" secondAttribute="bottom" constant="60" id="Hjp-v6-H8f"/>
+                            <constraint firstItem="kSa-Ws-lbe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="IgE-b5-Tw7"/>
+                            <constraint firstItem="tOv-Ah-zfj" firstAttribute="height" secondItem="kSa-Ws-lbe" secondAttribute="height" id="Su7-Ks-jZa"/>
+                            <constraint firstItem="GPj-Ps-lS3" firstAttribute="height" secondItem="kSa-Ws-lbe" secondAttribute="height" id="a8r-TR-fhc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tOv-Ah-zfj" secondAttribute="trailing" constant="70" id="jq1-2C-6zh"/>
+                            <constraint firstItem="tOv-Ah-zfj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="mmi-Ud-a8O"/>
+                            <constraint firstItem="tOv-Ah-zfj" firstAttribute="top" secondItem="GPj-Ps-lS3" secondAttribute="bottom" constant="30" id="q6G-OP-V0J"/>
+                            <constraint firstItem="tOv-Ah-zfj" firstAttribute="width" secondItem="kSa-Ws-lbe" secondAttribute="width" id="uKh-cX-fnA"/>
+                            <constraint firstItem="GPj-Ps-lS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="vgT-Jh-lK0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QUQ-oI-GHp"/>
+                    <connections>
+                        <outlet property="button1" destination="kSa-Ws-lbe" id="dFS-39-9gF"/>
+                        <outlet property="button2" destination="GPj-Ps-lS3" id="3ZV-f9-uiZ"/>
+                        <outlet property="button3" destination="tOv-Ah-zfj" id="31P-c9-1DS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-492" y="24.7376311844078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="uk.png" width="200" height="100"/>
+    </resources>
+</document>
